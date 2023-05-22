@@ -1,0 +1,61 @@
+﻿<Window x:Class="EngCalculator.MoreFunctions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EngCalculator"
+        mc:Ignorable="d"
+        Title="Функции" Height="300" Width="525" Background="#aab6ac"
+        Icon="C:\Users\yuram\source\repos\EngCalculator\EngCalculator\icon.ico">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1.15*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Button Style="{DynamicResource ButtonStyle}" Name="sin" Grid.Row="2" Grid.Column="0" Content="sin" FontSize="20" FontFamily="Caladea" Click="sin_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="cos" Grid.Row="2" Grid.Column="1" Content="cos" FontSize="20" FontFamily="Caladea" Click="cos_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="tan" Grid.Row="2" Grid.Column="2" Content="tan" FontSize="20" FontFamily="Caladea" Click="tan_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="cot" Grid.Row="2" Grid.Column="3" Content="cot" FontSize="20" FontFamily="Caladea" Click="cot_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="sec" Grid.Row="2" Grid.Column="4" Content="sec" FontSize="20" FontFamily="Caladea" Click="sec_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="csc" Grid.Row="2" Grid.Column="5" Content="csc" FontSize="20" FontFamily="Caladea" Click="csc_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="asin" Grid.Row="3" Grid.Column="0" Content="asin" FontSize="20" FontFamily="Caladea" Click="asin_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="acos" Grid.Row="3" Grid.Column="1" Content="acos" FontSize="20" FontFamily="Caladea" Click="acos_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="atan" Grid.Row="3" Grid.Column="2" Content="atan" FontSize="20" FontFamily="Caladea" Click="atan_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="acot" Grid.Row="3" Grid.Column="3" Content="acot" FontSize="20" FontFamily="Caladea" Click="acot_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="asec" Grid.Row="3" Grid.Column="4" Content="asec" FontSize="20" FontFamily="Caladea" Click="asec_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="acsc" Grid.Row="3" Grid.Column="5" Content="acsc" FontSize="20" FontFamily="Caladea" Click="acsc_Click"/>
+
+        <Button Style="{DynamicResource ButtonStyle}" Name="MC" Grid.Row="0" Grid.Column="0" Content="MC" FontSize="20" FontFamily="Caladea" Click="MC_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="MR" Grid.Row="0" Grid.Column="1" Content="MR" FontSize="20" FontFamily="Caladea" Click="MR_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="MPlus" Grid.Row="0" Grid.Column="2" Content="M+" FontSize="20" FontFamily="Caladea" Click="MPlus_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="MMinus" Grid.Row="0" Grid.Column="3" Content="M-" FontSize="20" FontFamily="Caladea" Click="MMinus_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="MS" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" Content="MS" FontSize="20" FontFamily="Caladea" Click="MS_Click"/>
+        <ListBox Style="{DynamicResource ListStyle}" Name="Memory" Grid.RowSpan="4" Grid.Column="6" MouseDoubleClick="Memory_MouseDoubleClick_1" Grid.ColumnSpan="2"/>
+
+        <Button Style="{DynamicResource ButtonStyle}" Name="Cube" Grid.Row="1" Grid.Column="0" Content="x^3" FontSize="20" FontFamily="Caladea" Click="Cube_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="CubicRoot" Grid.Row="1" Grid.Column="1" Content="3√x" FontSize="20" FontFamily="Caladea" Click="CubicRoot_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="yRoot" Grid.Row="1" Grid.Column="2" Content="y√x" FontSize="20" FontFamily="Caladea" Click="yRoot_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="TwoPowX" Grid.Row="1" Grid.Column="3" Content="2^x" FontSize="20" FontFamily="Caladea" Click="TwoPowX_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="LogYX" Grid.Row="1" Grid.Column="4" Content="log y (x)" FontSize="20" FontFamily="Caladea" Click="LogYX_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Name="ePowX" Grid.Row="1" Grid.Column="5" Content="e^x" FontSize="20" FontFamily="Caladea" Click="ePowX_Click"/>
+
+    </Grid>
+</Window>

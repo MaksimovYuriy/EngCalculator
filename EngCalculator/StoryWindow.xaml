@@ -1,0 +1,23 @@
+﻿<Window x:Class="EngCalculator.StoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EngCalculator"
+        mc:Ignorable="d"
+        Title="История" Height="500" Width="300"
+        Icon="C:\Users\yuram\source\repos\EngCalculator\EngCalculator\icon.ico">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <ScrollViewer>
+            <TextBox Style="{DynamicResource TextStyle}" Name="story_box" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" Text="" IsEnabled="False" FontSize="20" FontFamily="Caladea"/>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
